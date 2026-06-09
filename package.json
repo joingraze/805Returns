@@ -1,0 +1,31 @@
+{
+  "name": "805returns",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validation landing page for 805Returns — the local logistics company for your Amazon returns.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "pages:dev": "npm run build && wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "db:migrate:local": "wrangler d1 execute 805returns-waitlist --local --file=./schema.sql",
+    "db:migrate:remote": "wrangler d1 execute 805returns-waitlist --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11",
+    "wrangler": "^3.99.0"
+  }
+}

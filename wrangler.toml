@@ -1,0 +1,16 @@
+name = "805returns"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Cloudflare D1 database that stores waitlist signups + funnel events.
+# Provisioned in the 805Returns Cloudflare account.
+[[d1_databases]]
+binding = "DB"
+database_name = "805returns-waitlist"
+database_id = "467dbd5b-81a5-44b4-b109-e77d6abfa00d"
+
+# Set ADMIN_TOKEN as an encrypted secret in the Pages project, NOT here:
+#   wrangler pages secret put ADMIN_TOKEN
+# It guards the /api/stats validation dashboard endpoint.
+[vars]
+# Public, non-secret config can live here.

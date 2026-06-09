@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* 805Returns brand theme — coastal navy + a warm sunset coral accent.
+   Tailwind v4 CSS-first config: these become utilities like bg-navy-900,
+   text-coral-500, etc. */
+@theme {
+  --color-navy-50: #eef4fb;
+  --color-navy-100: #d4e3f4;
+  --color-navy-200: #a9c6e8;
+  --color-navy-300: #6f9fd6;
+  --color-navy-400: #3f78bf;
+  --color-navy-500: #2059a0;
+  --color-navy-600: #164684;
+  --color-navy-700: #123a6c;
+  --color-navy-800: #0e2d54;
+  --color-navy-900: #0b2a4a;
+  --color-navy-950: #07182c;
+
+  --color-coral-50: #fff3ed;
+  --color-coral-100: #ffe2d3;
+  --color-coral-200: #ffc1a5;
+  --color-coral-300: #ff9a6d;
+  --color-coral-400: #ff7a45;
+  --color-coral-500: #f85e23;
+  --color-coral-600: #e64710;
+  --color-coral-700: #bf350f;
+
+  --color-sand-50: #fbf7f0;
+  --color-sand-100: #f5ecdd;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-sand-50 text-navy-900 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  ::selection {
+    @apply bg-coral-200 text-navy-950;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  /* Soft animated reveal used on scroll. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
