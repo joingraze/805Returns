@@ -13,7 +13,7 @@ import { track } from "./lib/analytics";
 
 export default function App() {
   // The plan a visitor says they'd pick. Defaults to the highlighted tier.
-  const [selectedPlan, setSelectedPlan] = useState("unlimited_monthly");
+  const [selectedPlan, setSelectedPlan] = useState("concierge_monthly");
 
   const scrollToWaitlist = useCallback(() => {
     document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth", block: "center" });

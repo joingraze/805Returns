@@ -12,7 +12,7 @@ export function Footer() {
         </div>
 
         <p className="text-center text-sm text-navy-500">
-          The local logistics company for your Amazon returns · {brand.region}
+          The local errand crew for your online returns · {brand.region}
         </p>
 
         <a href={`mailto:${brand.email}`} className="text-sm font-medium text-navy-600 hover:text-coral-600">

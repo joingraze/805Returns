@@ -10,22 +10,22 @@
 export const brand = {
   name: "805Returns",
   domain: "805Returns.com",
-  region: "California's Central Coast",
+  region: "Santa Barbara",
   areaCode: "805",
   email: "hello@805returns.com",
   phone: "(805) 000-0000",
 };
 
 export const hero = {
-  eyebrow: "Now serving the 805 — Santa Barbara to San Luis Obispo",
-  headline: "Never deal with an Amazon return again.",
+  eyebrow: "Now serving Santa Barbara · Montecito · Goleta · Carpinteria",
+  headline: "Never leave the house for a return again.",
   subhead:
-    "We're your local 805 logistics crew. Leave your returns at the door — we pack them, print the labels, and drop them at UPS, FedEx, or the Amazon counter. You just get your refund.",
+    "We're your local Santa Barbara errand crew for returns. Leave anything at your door — Amazon, Target, Zara, a boutique — and we pack it, label it, and drop it off. You keep your afternoon; your refund shows up like it always would.",
   primaryCta: "Get early access",
   secondaryCta: "See pricing",
   // Quantified benefit, ReturnQueen-style.
   proofStat: "Save 4+ hours a month",
-  proofStatSub: "no boxes, no labels, no lines",
+  proofStatSub: "no trips, no lines — we come to you",
 };
 
 export const trustLogos = [
@@ -38,28 +38,28 @@ export const trustLogos = [
 ];
 
 export const painPoints = {
-  heading: "Returns are the worst part of online shopping",
-  sub: "You already paid for the stuff you're sending back. The least it could do is not waste your Saturday.",
+  heading: "Even an “easy” return still costs you an afternoon",
+  sub: "You already paid for the stuff you're sending back. The least it could do is not make you leave the house.",
   items: [
     {
-      icon: "box",
-      title: "Hunting for a box",
-      body: "Digging through the garage for packaging that's the right size and not already shredded.",
-    },
-    {
-      icon: "printer",
-      title: "Printing a label",
-      body: "Out of ink. Out of paper. Wrong printer. The QR code that won't scan at the counter.",
+      icon: "calendar",
+      title: "The pile by the door",
+      body: "Returns stack up in the entryway for weeks — and the 30-day window quietly closes while you keep meaning to get to it.",
     },
     {
       icon: "clock",
-      title: "Waiting in the UPS line",
-      body: "Driving across town to stand behind eight people during the only hour you had free.",
+      title: "It's still a trip",
+      body: "Even the “free” drop-off is a drive, a parking spot, and a detour crammed into the one free hour you had.",
     },
     {
-      icon: "calendar",
-      title: "Missing the window",
-      body: "That pile by the door that sits there until the 30-day return window quietly closes.",
+      icon: "box",
+      title: "Not everything scans at the kiosk",
+      body: "Target, Zara, boutiques, oversized boxes — plenty of returns still need a real box, a real label, and a real errand.",
+    },
+    {
+      icon: "printer",
+      title: "Your time isn't free",
+      body: "Twenty minutes each way plus the line adds up to hours a month you'd rather spend anywhere but the UPS counter.",
     },
   ],
 };
@@ -70,7 +70,7 @@ export const howItWorks = {
     {
       step: "01",
       title: "Schedule a pickup",
-      body: "Tell us what you're returning and pick a day. Forward the Amazon confirmation email or just snap a photo — we'll sort out the labels.",
+      body: "Tell us what you're returning — Amazon, Target, Zara, anywhere — and pick a day. Forward the confirmation email or just snap a photo, and we'll sort out the labels.",
     },
     {
       step: "02",
@@ -117,11 +117,11 @@ export const plans: Plan[] = [
     cta: "I'd pay per pickup",
   },
   {
-    id: "unlimited_monthly",
-    name: "Unlimited Monthly",
-    price: "$19",
+    id: "concierge_monthly",
+    name: "Concierge Unlimited",
+    price: "$29",
     cadence: "/ month",
-    blurb: "You shop online a lot. Stop thinking about returns entirely.",
+    blurb: "You value your time and you'd rather never leave home for an errand again.",
     features: [
       "Unlimited doorstep pickups",
       "Priority same-week scheduling",
@@ -136,11 +136,11 @@ export const plans: Plan[] = [
   {
     id: "annual",
     name: "Annual",
-    price: "$99",
+    price: "$290",
     cadence: "/ year",
-    blurb: "Unlimited pickups, billed yearly. Works out to about $8.25/mo.",
+    blurb: "Unlimited pickups, billed yearly. Works out to about $24/mo.",
     features: [
-      "Everything in Unlimited",
+      "Everything in Concierge Unlimited",
       "Two months free vs. monthly",
       "Locked-in founding-member rate",
       "Priority pickup windows",
@@ -163,7 +163,7 @@ export const guarantee = {
     },
     {
       title: "Local crew, not a faceless app",
-      body: "We're based right here on the Central Coast. Same-week pickups, real people, and routes that keep everything local.",
+      body: "We're based right here in Santa Barbara. Same-week pickups, real people, and routes that stay in the neighborhood.",
     },
   ],
 };
@@ -183,7 +183,7 @@ export const faqs = [
   },
   {
     q: "What areas do you cover?",
-    a: "We're starting on California's Central Coast — the 805 — from Santa Barbara up through San Luis Obispo. Drop your ZIP on the waitlist so we know where to launch first.",
+    a: "We're starting tight: Santa Barbara, Montecito, Goleta and Carpinteria — then expanding neighborhood by neighborhood. Drop your ZIP on the waitlist so we know where to launch first.",
   },
   {
     q: "How do I get my refund?",

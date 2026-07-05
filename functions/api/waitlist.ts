@@ -5,7 +5,7 @@ interface Env {
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const VALID_PLANS = new Set(["per_pickup", "unlimited_monthly", "annual"]);
+const VALID_PLANS = new Set(["per_pickup", "concierge_monthly", "annual"]);
 
 const json = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), {
